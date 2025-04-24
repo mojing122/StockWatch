@@ -20,6 +20,8 @@ def get_stock_data(stock_code):
                 style = "[green]"
             source_content = split_data[code]
             content = style + source_content
+            if code == 32:
+                content = content+"%"
         elif code == 30:
             source_content= split_data[code]
             if ":" in source_content:
@@ -39,6 +41,3 @@ def get_all_stock_data():
         result.append(stock_data)
 
     return result
-
-if __name__ == '__main__':
-    get_all_stock_data()

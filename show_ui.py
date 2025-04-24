@@ -12,12 +12,12 @@ def init_table():
 
     # 定义表格列（可自定义颜色）
     table.add_column("股票", style="cyan", width=12)
-    table.add_column("代码", style="magenta", justify="center")
-    table.add_column("当前价格", style="white", justify="center")
-    table.add_column("涨跌", style="white", justify="center")
-    table.add_column("涨跌幅", style="bold white", justify="center")
-    table.add_column("振幅", style="white", justify="center")
-    table.add_column("今开", style="white", justify="center")
+    table.add_column("代码", style="magenta", justify="left")
+    table.add_column("当前价格", style="white", justify="right")
+    table.add_column("涨跌", style="white", justify="right")
+    table.add_column("涨跌幅", style="bold white", justify="right")
+    table.add_column("振幅", style="white", justify="right")
+    table.add_column("今开", style="white", justify="right")
     table.add_column("更新时间", style="bold yellow")
     return table
 
